@@ -55,3 +55,4 @@ The analysis investigates whether evacuation signal control can be modeled as a 
 
 ## Repository Structure
 
+The Jupyter notebook used to generate the data and figures is included in the directory \notebooks.
