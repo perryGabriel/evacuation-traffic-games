@@ -79,3 +79,15 @@ To use this package locally, install it directly from this github repository:
 `pip install "git+https://github.com/perryGabriel/evacuation-traffic-games.git"`
 
 The script `scripts/run_expiriments.py` provided in this repository is a minimal working example to replicate the results from the paper, included as a PDF in this repository.
+
+## Citation
+
+The Bibtex citation for this repository is:
+
+`@misc{perryGabriel_evacuation_traffic_games,
+  author       = {Gabriel Perry},
+  title        = {Evacuation Traffic Games},
+  year         = {2025},
+  howpublished = {\url{https://github.com/perryGabriel/evacuation-traffic-games}},
+  note         = {Accessed: 2025-12-17}
+}`
