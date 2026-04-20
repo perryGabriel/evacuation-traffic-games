@@ -1,0 +1,14 @@
+{
+  "name": "supercritical",
+  "horizon": 300,
+  "seed": 7,
+  "network_config": "configs/networks/default_tree.yaml",
+  "output_dir": "results/supercritical",
+  "generation": {"g1": 0.3, "g2": 0.3, "g3": 0.3, "g4": 0.3, "g5": 0.3, "g6": 0.3},
+  "policies": ["all_open", "cycle", "longest_current_wait", "longest_cumulative_wait"],
+  "surrogate": {
+    "alpha": {"g1": 1.0, "g2": 1.0, "g3": 1.0, "g4": 1.0, "g5": 1.0, "g6": 1.0},
+    "phi_type": {"g1": "capped", "g2": "capped", "g3": "capped", "g4": "capped", "g5": "capped", "g6": "capped"},
+    "phi_params": {"g1": {"D": 40}, "g2": {"D": 40}, "g3": {"D": 40}, "g4": {"D": 40}, "g5": {"D": 40}, "g6": {"D": 40}}
+  }
+}

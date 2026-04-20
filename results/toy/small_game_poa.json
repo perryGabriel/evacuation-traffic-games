@@ -1,0 +1,17 @@
+{
+  "equilibria_count": 8,
+  "optimal_welfare": 3.0,
+  "best_equilibrium_welfare": 3.0,
+  "poa": 1.0,
+  "approximate": {
+    "approx_best_profile": {
+      "i1": [
+        "g2->i1",
+        "g2->i1",
+        "g2->i1"
+      ]
+    },
+    "approx_welfare": 3.0,
+    "note": "Approximate best-response dynamics"
+  }
+}
