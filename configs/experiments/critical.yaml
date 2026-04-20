@@ -1,0 +1,14 @@
+{
+  "name": "critical",
+  "horizon": 300,
+  "seed": 7,
+  "network_config": "configs/networks/default_tree.yaml",
+  "output_dir": "results/critical",
+  "generation": {"g1": 0.1666667, "g2": 0.1666667, "g3": 0.1666667, "g4": 0.1666667, "g5": 0.1666667, "g6": 0.1666667},
+  "policies": ["all_open", "cycle", "longest_current_wait", "longest_cumulative_wait"],
+  "surrogate": {
+    "alpha": {"g1": 1.0, "g2": 1.0, "g3": 1.0, "g4": 1.0, "g5": 1.0, "g6": 1.0},
+    "phi_type": {"g1": "geometric", "g2": "geometric", "g3": "geometric", "g4": "geometric", "g5": "geometric", "g6": "geometric"},
+    "phi_params": {"g1": {"beta": 0.98}, "g2": {"beta": 0.98}, "g3": {"beta": 0.98}, "g4": {"beta": 0.98}, "g5": {"beta": 0.98}, "g6": {"beta": 0.98}}
+  }
+}

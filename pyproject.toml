@@ -3,19 +3,31 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "evacsim"
+name = "evacuation-vug"
 version = "0.1.0"
-description = "Queue-based evacuation traffic simulation with signal policies."
+description = "Directed-tree evacuation queue simulator with valid-utility-game surrogate"
 readme = "README.md"
 requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Evacuation VUG Contributors"}]
 dependencies = [
-  "numpy",
-  "networkx",
-  "matplotlib",
+  "numpy>=1.26",
+  "networkx>=3.2",
+  "matplotlib>=3.8",
+  "PyYAML>=6.0",
 ]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+evacuation-vug = "evacuation_vug.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

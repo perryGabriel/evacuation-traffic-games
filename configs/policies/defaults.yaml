@@ -1,0 +1,21 @@
+policies:
+  all_open:
+    observes: local queue set
+    tie_break: lexicographic on branch id
+    deterministic_with_seed: true
+    scope: local
+  cycle:
+    observes: local branch list with internal cycle index
+    tie_break: round robin
+    deterministic_with_seed: true
+    scope: local
+  longest_current_wait:
+    observes: current max queue age per incoming branch
+    tie_break: lexicographic on branch id
+    deterministic_with_seed: true
+    scope: local
+  longest_cumulative_wait:
+    observes: cumulative queue age per incoming branch
+    tie_break: lexicographic on branch id
+    deterministic_with_seed: true
+    scope: local

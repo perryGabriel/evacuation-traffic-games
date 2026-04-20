@@ -1,0 +1,21 @@
+{
+  "safe_node": "v0",
+  "nodes": {
+    "g1": {"kind": "generator"}, "g2": {"kind": "generator"}, "g3": {"kind": "generator"},
+    "g4": {"kind": "generator"}, "g5": {"kind": "generator"}, "g6": {"kind": "generator"},
+    "i1": {"kind": "intersection"}, "i2": {"kind": "intersection"}, "i3": {"kind": "intersection"}, "i4": {"kind": "intersection"},
+    "v0": {"kind": "safe"}
+  },
+  "edges": [
+    {"u": "g1", "v": "i1", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "g2", "v": "i1", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "g3", "v": "i2", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "g4", "v": "i2", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "g5", "v": "i3", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "g6", "v": "i3", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "i1", "v": "i4", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "i2", "v": "i4", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "i3", "v": "i4", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2},
+    {"u": "i4", "v": "v0", "capacity": 5, "hold_base": 2, "hold_log_coeff": 2}
+  ]
+}

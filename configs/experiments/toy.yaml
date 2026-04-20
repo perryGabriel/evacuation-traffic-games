@@ -1,0 +1,14 @@
+{
+  "name": "toy",
+  "horizon": 3,
+  "seed": 11,
+  "network_config": "configs/networks/toy_tree.yaml",
+  "output_dir": "results/toy",
+  "generation": {"g1": 0.1, "g2": 0.1},
+  "policies": ["all_open", "cycle", "longest_current_wait", "longest_cumulative_wait"],
+  "surrogate": {
+    "alpha": {"g1": 1.0, "g2": 1.0},
+    "phi_type": {"g1": "capped", "g2": "capped"},
+    "phi_params": {"g1": {"D": 3}, "g2": {"D": 3}}
+  }
+}
